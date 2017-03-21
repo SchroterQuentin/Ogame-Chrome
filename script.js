@@ -111,9 +111,9 @@ function UpdateInfo() {
         }
         if (week <= 0 && minutes > 0) {
             display += minutes + "m ";
-            if (secondes > 0) {
-                display += secondes + "s";
-            }
+        }
+        if (week <= 0 && secondes > 0) {
+            display += secondes + "s";
         }
         
         if ($("ul.production_info li.restant", content).length) {
